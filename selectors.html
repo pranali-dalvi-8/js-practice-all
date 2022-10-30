@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <script>
+          const idname = document.getElementById("heading1");
+          console.log(idname);
+
+          const clsname = document.getElementsByClassName("heading2");
+          console.log(clsname);
+
+          const tag1 = document.getElementsByTagName("h3");
+          console.log(tag1);
+
+         
+    </script>
+</head>
+<body>
+    <h2>Element selectors in javascript</h2>
+     <span> 1. getElemetById()<br>
+            2. getElemetsByClassName()<br>
+            3. getElemetsByTagName()
+     </span>
+     <h1 id="heading1"> This is heading 1, it is created for get element by id .</h1>
+     <h2 class="heading2"> This is heading 2, it is created for get elements by class name .</h2>
+     <h3>This is heading 3 , it is created for get elements by tag name.</h3>
+
+     <h2>Properties</h2>
+     <p>1. innerHTML <br>
+         2. innerText</p>
+
+     <h2 id="head1">  This is heading 1, created for inner text properties.</h2>  
+     <h2 id="head2">  This is heading 2<b>created for inner html properties.</b> </h2>  
+
+     <script>
+         const tag  = document.getElementById("head1");
+          console.log(tag.innerText);
+
+          const id1 = document.getElementById("head2");
+          console.log(id1.innerHTML);
+     </script>
+
+     <h2> Query selectors </h2>
+     <p> 1. querySelector() : use for single element<br>
+         2. querySelectorAll : used for multiple element</p>
+
+     <u>This is underline tag, created for queryselector</u>
+     <h4 id="heading4"> this is h4 tag created for queryselectorall</h4>
+     <script>
+        const tag2 = document.querySelector("u");
+        tag2.style.color = "red";
+        console.log(tag2.innerText);
+
+        const tag3 = document.querySelectorAll("#heading4");
+        console.log(tag3.innerText);
+        
+     </script>
+</body>
+</html>

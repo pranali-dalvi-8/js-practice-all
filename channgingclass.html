@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js3</title>
+    <script>
+        function day(){
+            document.getElementById("day").src="day.png";
+            document.querySelector(".btn").className="day-btn btn";
+            document.querySelector("body").className="screen-background";
+        }
+        function night(){
+            document.getElementById("day").src="night.png";
+            document.querySelector(".btn1").className="night-btn btn";
+            document.querySelector("body").className="body";
+        }
+    </script>
+    <style>
+        body{
+            background-color: rgb(216, 215, 215);
+        }
+        .screen-background{
+              background-color:rgb(224, 230, 173);
+        }
+        .container{
+            width: 220px;
+            height:250px;
+            border:1px double black;
+            display: block;
+            margin: auto;
+            border-radius: 10px;
+            background-color: rgb(250, 202, 244);
+            box-shadow: 0px 0px 15px white;
+        }
+        .day-img{
+            height: 190px;
+            display: block;
+            margin: auto;
+            margin-top: 5px;
+            border-radius: 5px;
+        }
+        .btn{
+           border-radius: 15px;
+           font-size: 18px;
+           padding: 5px;
+           cursor: pointer;
+           border: 0.5px;
+        }
+        .btn1{
+            border-radius: 15px;
+           font-size: 18px;
+           padding: 5px;
+           cursor: pointer;
+           border: 0.5px;
+        }
+        .container-btn{
+            display: flex;
+            justify-content: space-between;
+            margin: 5px;
+            margin-top: 15px;
+        }
+        .day-btn{
+            background-color: yellow;
+        }
+        .night-btn{
+            background-color: black;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="day.png" class="day-img" id="day">
+        <div class="container-btn">
+            <button class=" btn"  onclick="day()"> Day</button>
+            <button class=" btn1" onclick="night()">Night</button>
+        </div>
+    </div>
+</body>
+</html>

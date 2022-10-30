@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body onload="console.log('webpage loading is completed')">
+    <h1> Types of Events in javascript</h1>
+    <p>
+        1. onClick<br>
+        2. onChange<br>
+        3. onmouseover<br>
+        4. onmouseout<br>
+        5. onkeydown<br>
+        6. onload
+    </p>
+
+    <button onclick="console.log('button is clicked..')">Click Me</button><br><br>
+    <input type="text" onchange="console.log('changed')" onclick="console.log('clicked..')" placeholder="enter full name"/><br><br>
+    <input type="text" onkeypress="console.log('key pressed')" placeholder="enter age"/><br><br>
+    <input type="text" onkeypress="console.log('key pressed')" onkeydown="console.log('key down')" onkeyup="console.log('key up')" placeholder="enter address"/><br><br>
+    <button onmouseover="console.log('mouse comes in') "onmouseout="console.log('mouse goes out') ">Mouse events</button>
+</body>
+</html>
